@@ -1,46 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://difgdl.gob.mx/images/ico/dif.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://difgdl.gob.mx/images/logo.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://difgdl.gob.mx/images/logo.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://difgdl.gob.mx/images/logo.png">
-    <link rel="apple-touch-icon-precomposed" href="http://difgdl.gob.mx/images/logo.png">
+    <link rel="shortcut icon" href="img/logoDIF.png">
 
-    <title>DIF Responsive</title>
+    <title>DIF GDL</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/modern-business.css" rel="stylesheet">
-
-    <!-- Import Exo font-family -->
+    <link href="css/dif-gdl.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
-
-    <!-- Import Fa fa symbols -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   </head>
-
-  <style type="text/css">
-  body{
-     font-family: 'Exo', sans-serif;
-     font-size: 1.1rem;
-  }
-  </style>
 
   <body>
 
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light  bg-light fixed-top">
-      <div class="container">
+      <div id="nav" class="container">
         <a href="#"><img src="img/logoDIF.png" height="65px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -61,11 +41,11 @@
                 <b>SERVICIOS</b>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownServicios">
-                <a class="dropdown-item" href="">Auditorio</a>
-                <a class="dropdown-item" href="">Adultos Mayores</a>
-                <a class="dropdown-item" href="">Discapacidad</a>
-                <a class="dropdown-item" href="">Mujeres</a>
-                <a class="dropdown-item" href="">Niñez</a>
+                <a class="dropdown-item" href="#">Auditorio</a>
+                <a class="dropdown-item" href="#">Adultos Mayores</a>
+                <a class="dropdown-item" href="#">Discapacidad</a>
+                <a class="dropdown-item" href="#">Mujeres</a>
+                <a class="dropdown-item" href="#">Niñez</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -80,13 +60,13 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>NOTICAS</b></a>
+              <a class="nav-link" href="#"><b>NOTICIAS</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><b>FOTOTECA</b></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="btn btn-secondary"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+            <li class="nav-item pl-2 hidden-lg-down">
+              <a href="#" class="btn btn-secondary"><i class="fa fa-file-text" aria-hidden="true"></i> FICHA TÉCNICA</a>
             </li>
           </ul>
         </div>
@@ -104,7 +84,12 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide One -->
           <div class="carousel-item active" style="background-color: #1fcfcb">
-            <div class="carousel-caption d-md-block">
+            <div class="row">
+              <div class="col-lg-12">
+                <br><br><center><img src="img/slider/difgdl.png" width="450px"></center>
+              </div>
+            </div>
+            <div class="carousel-caption">
               <h3>DIF Guadalajara</h3>
             </div>
           </div>
@@ -115,20 +100,29 @@
                 <br><br><center><img src="img/slider/centros.png" width="300px"></center>
               </div>
             </div>
-
-            <div class="carousel-caption d-md-block">
+            <div class="carousel-caption">
               <h3>Centros de Atención</h3>
             </div>
           </div>
           <!-- Slide Three -->
           <div class="carousel-item" style="background-color: #6bc048">
-            <div class="carousel-caption d-md-block">
+            <div class="row">
+              <div class="col-lg-12">
+                <br><br><center><img src="img/slider/difevoluciona.png" width="500px"></center>
+              </div>
+            </div>
+            <div class="carousel-caption">
               <h3>DIF Evoluciona</h3>
             </div>
           </div>
           <!-- Slide Four -->
           <div class="carousel-item" style="background-color: #fc8104">
-            <div class="carousel-caption d-md-block">
+            <div class="row">
+              <div class="col-lg-12">
+                <br><br><center><img src="img/slider/grupos.png" width="430px"></center>
+              </div>
+            </div>
+            <div class="carousel-caption">
               <h3>Grupos de Atención</h3>
             </div>
           </div>
@@ -183,7 +177,7 @@
 
       <!-- Portfolio Section -->
     <div class="container bg-azul-shadow">
-      <center><h2 class="pt-4 text-white">DIF Evoluciona</h2>
+      <center><h2 class="pt-4 text-white"><b>DIF Evoluciona</b></h2>
       <p class="text-white">El DIF trabaja para ti mediante los siguientes proyectos estratégicos:</p></center>
 
       <div class="row">
@@ -292,9 +286,25 @@
 
       <hr>
 
+      <!-- mapa -->
       <div class="row">
         <div class="col-12">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119445.51503230559!2d-103.40398126734942!3d20.68290515821558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3fe5fe410f%3A0x1246bc32bb5bcdc8!2sSistema+DIF+del+Mpo.+de+Guadalajara+(Oficinas+Administrativas)!5e0!3m2!1ses!2smx!4v1508137090215" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <center>
+          <h2 class="py-4">Nuestra Oficina Central</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5689319375524!2d-103.38290478536639!3d20.68710938618447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3fe60dc9ff%3A0x9e14fd22d7188120!2sSistema+DIF+Guadalajara!5e0!3m2!1ses!2smx!4v1508143755743" width="80%" height="450" frameborder="0" style="border:0"></iframe>
+          </center>
+        </div>
+      </div>
+      <!-- /.mapa -->
+
+      <hr>
+
+      <div class="row">
+        <div class="col-12">
+          <center>
+          <h2 class="py-4">Fototeca</h2>
+
+          </center>
         </div>
       </div>
 
@@ -328,14 +338,13 @@
     <!-- /.container -->
 
     <!-- Bottom -->
-    <footer class="py-1 bg-bottom">
+    <footer id="footer" class="py-1 bg-bottom">
       <div class="container py-md-5 py-sm-3">
         <div class="row">
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-4 hidden-sm-down">
             <center><img src="img/logoDIF.png" width="200"></center>
           </div>
-          <div class="col-md-4 col-sm-6" style="color:#868e96;font-size: 70%">
-            <center>
+          <div class="col-md-5 col-sm-6 py-2" style="color:#868e96;font-size: 75%">
               <i class="fa fa-home px-2"></i>
               Calle Gral. Eulogio Parra 2539
               <p style="padding-left: 1.9rem">Colonia Lomas de Guevara
@@ -349,25 +358,15 @@
 
               <i class="fa fa-phone px-2"></i>
               <strong>Tel:</strong> (33) 3848 5000
-            </center>
           </div>
-          <div class="col-md-5 hidden-sm-down">
-            <div class="row">
-              <div class="col-lg-5 col-sm-6">
-                <img src="img/footer/footer_1.jpg" width="170px">
-              </div>
-              <div class="col-lg-5 col-sm-6">
-                <img src="img/footer/footer_2.jpg" width="170px">
-              </div>
-            </div>
-            <div class="row pt-xl-4">
-              <div class="col-lg-5 col-sm-6">
-                <img src="img/footer/footer_3.jpg" width="170px">
-              </div>
-              <div class="col-lg-5 col-sm-6">
-                <img src="img/footer/footer_4.jpg" width="170px">
-              </div>
-            </div>
+          <div class="col-md-3 col-sm-6 py-2" style="color:#868e96;">
+              <b>Enlaces</b>
+              <p style="padding-left: 1.9rem">
+                  <a href="#footer">Agenda</a>
+              <br><a href="#footer">Compras Licitaciones</a>
+              <br><a href="#footer">Directorio</a>
+              <br><a href="#footer">Organigrama</a>
+              <br><a href="#footer">Padrón de Proveedores</a></p>
           </div>
         </div>
       </div>
@@ -385,10 +384,10 @@
             <p style="color:#868e96;font-size: 70%"><b>DIF GUADALAJARA</b></p>
           </div>
           <div class="col-md-3 pt-md-3">
-            <a class="px-1" href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
-            <a class="px-1" href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-            <a class="px-1" href=""><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
-            <a class="px-1" href=""><i class="fa fa-flickr fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href="https://www.facebook.com/dif.guadalajara/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href="https://twitter.com/DIFGUADALAJARA" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href="https://www.youtube.com/AytoGuadalajara" target="_blank"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href="https://www.flickr.com/" target="_blank"><i class="fa fa-flickr fa-lg" aria-hidden="true"></i></a>
           </div>
           <div class="col-md-1 pt-md-3 hidden-sm-down">
             <a href="#"><i class="fa fa-chevron-circle-up fa-lg" aria-hidden="true"></i></a>
@@ -399,6 +398,7 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="vendor/smooth.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
