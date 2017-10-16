@@ -1,661 +1,408 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-<head>
+<html lang="en">
+
+  <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DIF Guadalajara</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://difgdl.gob.mx/images/ico/dif.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://difgdl.gob.mx/images/logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://difgdl.gob.mx/images/logo.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://difgdl.gob.mx/images/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="http://difgdl.gob.mx/images/logo.png">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sl-slide.css">
+    <title>DIF Responsive</title>
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/ico/dif.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo.png">
-    <link rel="apple-touch-icon-precomposed" href="images/logo.png">
-    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
-</head>
-<style type="text/css">
+    <!-- Custom styles for this template -->
+    <link href="css/modern-business.css" rel="stylesheet">
 
+    <!-- Import Exo font-family -->
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700" rel="stylesheet">
 
-body{
+    <!-- Import Fa fa symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  </head>
 
-   font-family: 'Exo', sans-serif;
+  <style type="text/css">
+  body{
+     font-family: 'Exo', sans-serif;
+     font-size: 1.1rem;
+  }
+  </style>
 
+  <body>
 
-}
-
-
-</style>
-<body>
-
-    <!--Header-->
-    <header class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a id="logo" class="pull-left" href="index.html"></a>
-                <div class="nav-collapse collapse pull-right">
-                    <ul class="nav">
-                        <li class="active"><a href="index.html">Inicio</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios <i class="icon-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Salón de eventos</a></li>
-                                <!--<li><a href="#">Grupos Vulnerables</a></li>-->
-                                <li><a href="#">Adultos Mayores</a></li>
-                                <li><a href="#">Niñez</a></li>
-                                <li><a href="#">Discapacidad</a></li>
-                                <li><a href="#">Mujeres</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Centros <i class="icon-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Centros de Desarrollo Comunitario</a></li>
-                                <li><a href="#">Centrods de Desarrollo Infantil</a></li>
-                                <li><a href="#">Centro de Asistencia Infantil Comunitario</a></li>
-                                <li><a href="#">Laboratorios</a></li>
-                                <li><a href="#">Otros Centros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="http://transparencia.difgdl.gob.mx">Transparencia</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Enlaces <i class="icon-angle-down"></i></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Agenda</a></li>
-                                <li><a href="http://transparencia.difgdl.gob.mx/compras/index.php">Compras Licitaciones</a></li>
-                                <li><a href="#">Directorio</a></li>
-                                <li><a href="#">Organigrama</a></li>
-                                <li><a href="#">Padrón de provedoores</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Noticias</a></li>
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light  bg-light fixed-top">
+      <div class="container">
+        <a href="#"><img src="img/logoDIF.png" height="65px"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>INICIO</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>NOSOTROS</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>TRANSPARENCIA</b></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>SERVICIOS</b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownServicios">
+                <a class="dropdown-item" href="">Auditorio</a>
+                <a class="dropdown-item" href="">Adultos Mayores</a>
+                <a class="dropdown-item" href="">Discapacidad</a>
+                <a class="dropdown-item" href="">Mujeres</a>
+                <a class="dropdown-item" href="">Niñez</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownCentros" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>CENTROS</b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownCentros">
+                <a class="dropdown-item" href="#">Centros de Desarrollo Comunitario</a>
+                <a class="dropdown-item" href="#">Centros de Desarrollo Infantil</a>
+                <a class="dropdown-item" href="#">Centro de Asistencia Infantil Comunitario</a>
+                <a class="dropdown-item" href="#">Laboratorios</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>NOTICAS</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>FOTOTECA</b></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-secondary"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+            </li>
+          </ul>
         </div>
-    </header>
-    <!-- /header -->
-
-    <!--Slider-->
-    <section id="slide-show">
-     <div id="slider" class="sl-slider-wrapper">
-
-        <!--Slider Items-->
-        <div class="sl-slider">
-            <!--Slider Item1 AZUL-->
-            <div class="sl-slide item1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-                <div class="sl-slide-inner">
-                    <div class="container">
-                      <img class="pull-right" width="550px" style="margin-right:80px;margin-top:100px" src="images/slider/difgdl2.png"  alt="" /> <!-- src="images/sample/slider/dif.png"> -->
-                      <h2><br>DIF<br>Guadalajara</h2>
-                    </div>
-                </div>
-            </div>
-            <!--/Slider Item1 AZUL-->
-
-            <!--Slider Item2 NARANJA-->
-            <div class="sl-slide item2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-                <div class="sl-slide-inner">
-                    <div class="container">
-                      <img class="pull-right" width="550px" style="margin-top:50px;margin-left:10px" src="images/slider/grupos2.png"  alt="" /> <!-- src="images/sample/slider/dif.png"> -->
-                      <h2>Grupos<br>de atención</h2>
-                      <h3 class="gap"></h3>
-                      <a class="btn btn-large btn-transparent" href="#">Más información</a>
-                    </div>
-                </div>
-            </div>
-            <!--Slider Item2 NARANJA-->
-
-            <!--Slider Item3 FUCSIA-->
-            <div class="sl-slide item3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                <div class="sl-slide-inner">
-                   <div class="container">
-                    <img class="pull-right" width="550px" style="margin-right:70px;margin-top:50px" src="images/slider/centros2.png" alt="" />
-                    <h2>Centros de Atención</h2>
-                    <h3 class="gap">Conócelos</h3>
-                    <a class="btn btn-large btn-transparent" href="#">Abrir mapa</a>
-                  </div>
-                </div>
-            </div>
-            <!--Slider Item3 FUCSIA-->
-
-            <!--Slider Item5 VERDE-->
-            <div class="sl-slide item5" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-                <div class="sl-slide-inner">
-                   <div class="container">
-                    <img class="pull-right" width="550px" style="margin-left:80px;margin-top:80px" src="images/slider/difevoluciona.png" alt="" />
-                    <h2>DIF Evoluciona</h2>
-                    <h3 class="gap"></h3>
-                    <a class="btn btn-large btn-transparent" href="#">Más información</a>
-                  </div>
-                </div>
-            </div>
-            <!--Slider Item5 VERDE-->
-
-    </div>
-    <!--/Slider Items-->
-
-    <!--Slider Next Prev button-->
-    <nav id="nav-arrows" class="nav-arrows">
-        <span class="nav-arrow-prev"><i class="icon-angle-left"></i></span>
-        <span class="nav-arrow-next"><i class="icon-angle-right"></i></span>
+      </div>
     </nav>
-    <!--/Slider Next Prev button-->
 
-</div>
-<!-- /slider-wrapper -->
-</section>
-<!--/Slider-->
-
-<div class="video">
-  <center>
-    <video src="mariposa.mov" width="320" height="146" style="margin-right:230px" autoplay loop></video>
-  </center>
-</div>
-
-<!--IDentidad DIF
-<section id="services">
-    <div class="container">
-        <div class="center gap">
-            <h3>Identidad DIF</h3>
-            <p class="lead" align="justify">El DIF Guadalajara proporciona asistencia social, así como espacios de Desarrollo Comunitarios enfocados a grupos de población específicos que requieren del desarrollo de habilidades para lograr el empoderamiento y autosuficiencia de los miembros de la comunidad, poniéndolos en contacto con herramientas y tecnologías innovadoras.
-            </p>
-        </div>
-
-        <div class="row-fluid">
-            <div class="span4">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="icon-flag-alt icon-medium"></i>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Misión</h4>
-                        <p align="justify">Contribuir a la restitución de grupos y personas en situación vulnerable por medio de la asistencia social, para así fortalecer el tejido comunitario de Guadalajara.
-                        </p>
-                    </div>
-                </div>
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One -->
+          <div class="carousel-item active" style="background-color: #1fcfcb">
+            <div class="carousel-caption d-md-block">
+              <h3>DIF Guadalajara</h3>
             </div>
-
-            <div class="span4">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="icon-globe icon-medium"></i>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Visión</h4>
-                        <p align="justify">Consolidar nuestro modelo de atención con características de innovación en la puesta en marcha de estrategias de asistencia social, para prevenir y atender situaciones de vulnerabilidad social.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="span4">
-                <div class="media">
-                    <div class="pull-left">
-                        <i class="icon-bullseye icon-medium icon-rounded"></i>
-                    </div>
-                    <div class="media-body">
-                        <h4 class="media-heading">Objetivo</h4>
-                        <p align="justify">Mejorar las condiciones de vida de grupos vulnerables y fortalecer nuestros programas para brindar ayuda a quienes la necesitan, así como proteger y promover los derechos humanos por medio del ofrecimiento herramientas para el desarrollo autosuficiente de las personas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--/Services
-
-<section class="main-info">
-    <div class="container">
-        <div class="row-fluid">
-            <center><div class="span12">
-              <h3>Valores</h3><br>
-                <img src="images/valores.png">
-            </div></center>
-        </div>
-    </div>
-</section>-->
-
-<section id="recent-works">
-    <div class="container">
-        <div class="center">
-            <h3>DIF Evoluciona</h3>
-            <p class="lead">El DIF trabaja para ti mediante los siguientes proyectos estratégicos:
-            </p>
-        </div>
-        <div class="gap"></div>
-        <ul class="gallery col-4">
-            <!--Item 1-->
-            <li>
-              <div class="preview">
-                <div class="proyectos">
-                    <a data-toggle="modal" href="#modal-1">
-                      <img style="position: relative;right: 20px;" src="images/difevoluciona/infancia.png">
-                    <div class="overlay3">
-                    </div>
-                    </a>
-                </div>
-              </div>
-                <div id="modal-1" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img alt=" " width="400px" src="images/difevoluciona/infanciaDesc.png">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 1-->
-
-            <!--Item 2-->
-            <li>
-              <div class="preview">
-                <div class="proyectos">
-                    <a data-toggle="modal" href="#modal-2">
-                    <img style="position: relative;right: 20px;margin-top:-9px" src="images/difevoluciona/adultosmayores.png">
-                    <div class="overlay3">
-                    </div>
-                    </a>
-                </div>
-              </div>
-                <div id="modal-2" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img alt=" " width="400px" style="max-height:400px" src="images/difevoluciona/adultosmayoresDesc.png">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 2-->
-
-            <!--Item 3-->
-            <li>
-              <div class="preview">
-                <div class="proyectos">
-                  <a data-toggle="modal" href="#modal-3">
-                    <img style="position: relative;right: 20px;" src="images/difevoluciona/capacitacion.png">
-                    <div class="overlay3">
-                    </div>
-                  </a>
-                </div>
-              </div>
-                <div id="modal-3" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img alt=" " width="400px" style="max-height:400px" src="images/difevoluciona/capacitacionDesc.png">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 3-->
-
-            <!--Item 4-->
-            <li>
-              <div class="preview">
-                <div class="proyectos">
-                  <a data-toggle="modal" href="#modal-4">
-                    <img src="images/difevoluciona/prevencion.png">
-                    <div class="overlay3">
-                    </div>
-                  </a>
-                </div>
-              </div>
-                <div id="modal-4" class="modal hide fade">
-                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
-                    <div class="modal-body">
-                        <img alt=" " width="400px" style="max-height:400px" src="images/difevoluciona/prevencionDesc.png">
-                    </div>
-                </div>
-            </li>
-            <!--/Item 4-->
-        </ul>
-    </div>
-<div class="gap"><br><br></div>
-</section>
-
-<section id="clients" class="main">
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span2">
-                <div class="clearfix">
-                    <h2 class="pull-left"><img width="150px" style="margin-left:-20px margin-top:-20px" src="images/noticias.png"></h2>
-                    <div class="pull-right">
-                        <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="span10">
-                <div id="myCarousel" class="carousel slide clients">
-                  <!-- Carousel items -->
-                  <div class="carousel-inner">
-                    <div class="active item">
-                      <div class="row-fluid">
-                          <ul class="thumbnails">
-                            <li class="span14">
-                              <div class="noticias">
-                                <a href="http://difgdl.gob.mx/index.php/noticias/item/703-dif-guadalajara-fomenta-el-buen-trato-y-respeto-a-los-derechos-de-los-adultos-mayores">
-                                  <img width="1000" src="images/noticias/escuela.png">
-                                  <div class="overlay2">
-                                  </div>
-                                </a>
-                              </div>
-                            </li>
-
-                          </ul>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row-fluid">
-                          <ul class="thumbnails">
-                            <li class="span14">
-                              <div class="noticias">
-                                <a href="http://difgdl.gob.mx/index.php/noticias/item/708-con-la-entrega-de-un-acuerdo-de-paz-se-presenta-el-mosaico-participativo-oblatos-pinta-bien">
-                                  <img width="1000" src="images/noticias/oblatos.png">
-                                  <div class="overlay2">
-                                  </div>
-                                </a>
-                              </div>
-                            </li>
-
-                          </ul>
-                      </div>
-                    </div>
-                <!-- /Carousel items -->
-
-            </div>
-        </div>
-    </div>
-</div>
-</section>
-
-<!--Bottom-->
-<section id="bottom" class="main">
-    <!--Container-->
-    <div class="container">
-
-        <!--row-fluids-->
-        <div class="row-fluid">
-
-            <!--Contact Form-->
-            <div class="span3">
-              <img src="images/logoDIF.png" width="200">
-
-            </div>
-            <!--End Contact Form-->
-
-            <!--Important Links-->
-            <div id="tweets" class="span3">
-              <ul class="unstyled address">
-                  <li>
-                      <i class="icon-home"></i>Calle Gral. Eulogio Parra 2539
-                                            <br>Colonia Lomas de Guevara
-                                            <br>Guadalajara Jalisco, México
-                  </li>
-                  <li>
-                    Horarios de Atención
-                    <br>Lunes a Viernes de 9:00 a 16:00 hrs
-                  </li>
-                  <li>
-                      <i class="icon-envelope"></i>
-                      <strong>Email: </strong> contacto@difgdl.gob.mx
-                  </li>
-                  <li>
-                      <i class="icon-phone"></i>
-                      <strong>Tel:</strong> (33) 3848 5000
-                  </li>
-                </ul>
-            </div>
-            <!--Important Links-->
-
-            <div class="span6">
-                <h4>FOTOTECA</h4>
-                <div class="row-fluid first">
-                    <ul class="thumbnails">
-                      <li class="span2">
-                        <a href="" title="Oblatos">
-                          <img src="images/fototeca/OblatosPintaBien1.png" width="150" height="200" alt="01 (196)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Caminata">
-                          <img src="images/fototeca/fototeca1.png" width="150" height="200" alt="01 (196)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Música">
-                          <img src="images/fototeca/fototeca21.png" width="150" height="200" alt="01 (65)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Brigadas">
-                          <img src="images/fototeca/fototeca31.png" width="150" height="200" alt="01 (6)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                      <a href="" title="Adultos Mayores">
-                        <img src="images/fototeca/fototeca11.png" width="150" height="200" alt="01 (196)">
-                      </a>
-                  </li>
-                  <li class="span2">
-                      <a href="" title="Donación de Aparatos">
-                        <img src="images/fototeca/fototeca8.png" width="150" height="200" alt="01 (196)">
-                      </a>
-                  </li>
-                </ul>
-            </div>
-            <div class="row-fluid">
-                <ul class="thumbnails">
-                    <li class="span2">
-                        <a href="" title="Salud">
-                          <img src="images/fototeca/fototeca41.png" width="150" height="200" alt="01 (6)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Equipo">
-                          <img src="images/fototeca/fototeca51.png" width="150" height="200" alt="01 (254)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Baile">
-                          <img src="images/fototeca/fototeca61.png" width="150" height="200" alt="01 (196)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Abrazo">
-                          <img src="images/fototeca/fototeca71.png" width="150" height="200" alt="01 (65)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Curso Computación">
-                          <img src="images/fototeca/fototeca10.png" width="150" height="200" alt="01 (6)">
-                        </a>
-                    </li>
-                    <li class="span2">
-                        <a href="" title="Baile">
-                          <img src="images/fototeca/fototeca9.png" width="150" height="200" alt="01 (254)">
-                        </a>
-                    </li>
-                </ul>
+          </div>
+          <!-- Slide Two -->
+          <div class="carousel-item" style="background-color: #e71096">
+            <div class="row">
+              <div class="col-lg-12">
+                <br><br><center><img src="img/slider/centros.png" width="300px"></center>
               </div>
             </div>
 
-
-    </div>
-    <!--/row-fluid-->
-</div>
-<!--/container-->
-
-</section>
-<!--/bottom-->
-
-<!--Footer-->
-<footer id="footer">
-    <div class="container">
-        <div class="row-fluid">
-            <div class="span4 cp">
-                &copy; 2017 <a target="_blank" href="">DIF GDL</a>. Todos los derechos reservados.
+            <div class="carousel-caption d-md-block">
+              <h3>Centros de Atención</h3>
             </div>
-            <!--/Copyright-->
-            <div class="span4 cp">
-                <center><h4>DIF GUADALAJARA</h4></center>
+          </div>
+          <!-- Slide Three -->
+          <div class="carousel-item" style="background-color: #6bc048">
+            <div class="carousel-caption d-md-block">
+              <h3>DIF Evoluciona</h3>
             </div>
-
-            <div class="span3">
-                <ul class="social pull-right">
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-youtube"></i></a></li>
-                    <li><a href="#"><i class="icon-rss"></i></a></li>
-                    <li><a href="#"><i class="icon-flickr"></i></a></li>
-                </ul>
+          </div>
+          <!-- Slide Four -->
+          <div class="carousel-item" style="background-color: #fc8104">
+            <div class="carousel-caption d-md-block">
+              <h3>Grupos de Atención</h3>
             </div>
-
-            <div class="span1">
-                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
-            </div>
-            <!--/Goto Top-->
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Noticias -->
+      <div class="my-2 row">
+        <div class="col-lg-2 pb-3"><center><img src="img/noticias/noticias.png" height="130px"></center></div>
+        <div class="col-lg-5">
+          <div class="card noticias">
+            <a href="http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html">
+            <img class="card-img-top" src="img/noticias/boletines_imagen_15.jpg" height="170px">
+            <div class="overlay2">
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="card noticias">
+            <a href="http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html">
+            <img class="card-img-top" src="img/noticias/boletines_imagen_14.jpg" height="170px">
+            <div class="overlay2">
+            </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!--  Mariposa video -->
+      <div class="hidden-sm-down">
+        <center>
+          <video src="video/mariposa.mov" style="margin-right:230px" autoplay="autoplay" loop="" width="320" height="146"></video>
+        </center>
+      </div>
+      <!-- /.video -->
+
+      <hr class="hidden-sm-down">
+
+      <!-- Portfolio Section -->
+    <div class="container bg-azul-shadow">
+      <center><h2 class="pt-4 text-white">DIF Evoluciona</h2>
+      <p class="text-white">El DIF trabaja para ti mediante los siguientes proyectos estratégicos:</p></center>
+
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card bg-transparent">
+            <div class="proyectos">
+              <a data-toggle="modal" data-target="#modal-infancia"><img class="card-img-top" src="img/evoluciona/infancia.png" alt="">
+              <div class="overlayp">
+              </div>
+              </a>
+            </div>
+            <div class="modal fade" id="modal-infancia" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="img/evoluciona/infanciaDesc.png" width="400px">
+                  </div>
+                </div>
+              </div>
+           </div>
+            <div class="card-body bg-azul">
+              <h4 class="card-title text-white">
+                <center>INFANCIA E INCLUSIÓN</center>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card bg-transparent">
+            <div class="proyectos">
+              <a data-toggle="modal" data-target="#modal-mayores"><img class="card-img-top" src="img/evoluciona/adultosmayores.png" alt="">
+              <div class="overlayp">
+              </div>
+              </a>
+            </div>
+            <div class="modal fade" id="modal-mayores" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="img/evoluciona/adultosmayoresDesc.png" width="400px">
+                  </div>
+                </div>
+              </div>
+           </div>
+            <div class="card-body bg-azul">
+              <h4 class="card-title text-white">
+                <center>ADULTOS MAYORES</center>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card bg-transparent">
+            <div class="proyectos">
+              <a data-toggle="modal" data-target="#modal-capacitacion"><img class="card-img-top" src="img/evoluciona/capacitacion.png" alt="">
+              <div class="overlayp">
+              </div>
+              </a>
+            </div>
+            <div class="modal fade" id="modal-capacitacion" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="img/evoluciona/capacitacionDesc.png" width="400px">
+                  </div>
+                </div>
+              </div>
+           </div>
+            <div class="card-body bg-azul">
+              <h4 class="card-title text-white">
+                <center>CAPACITACIÓN PARA EL TRABAJO</center>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6 portfolio-item">
+          <div class="card bg-transparent">
+            <div class="proyectos">
+              <a data-toggle="modal" data-target="#modal-prevencion"><img class="card-img-top" src="img/evoluciona/prevencion.png" alt="">
+              <div class="overlayp">
+              </div>
+              </a>
+            </div>
+            <div class="modal fade" id="modal-prevencion" role="dialog">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <img src="img/evoluciona/prevencionDesc.png" width="400px">
+                  </div>
+                </div>
+              </div>
+           </div>
+            <div class="card-body bg-azul">
+              <h4 class="card-title text-white">
+                <center>PREVENCIÓN Y REINSERCIÓN SOCIAL</center>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</footer>
-<!--/Footer-->
+      <!-- /.row -->
 
-<script src="js/vendor/jquery-1.9.1.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
-<!-- Required javascript files for Slider -->
-<script src="js/jquery.ba-cond.min.js"></script>
-<script src="js/jquery.slitslider.js"></script>
-<!-- /Required javascript files for Slider -->
+      <hr>
 
-<!-- SL Slider -->
-<script type="text/javascript">
-$(function() {
-    var Page = (function() {
+      <div class="row">
+        <div class="col-12">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119445.51503230559!2d-103.40398126734942!3d20.68290515821558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3fe5fe410f%3A0x1246bc32bb5bcdc8!2sSistema+DIF+del+Mpo.+de+Guadalajara+(Oficinas+Administrativas)!5e0!3m2!1ses!2smx!4v1508137090215" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
 
-        var $navArrows = $( '#nav-arrows' ),
-        slitslider = $( '#slider' ).slitslider( {
-            autoplay : true
-        } ),
+      <hr>
 
-        init = function() {
-            initEvents();
-        },
-        initEvents = function() {
-            $navArrows.children( ':last' ).on( 'click', function() {
-                slitslider.next();
-                return false;
-            });
+      <!-- Video -->
+      <div class="row pt-sm-2 hidden-xs-down">
+          <div class="col-lg-12">
+            <center>
+            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2Fvideos%2F1309339559174721%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            </center>
+          </div>
+      </div>
+      <!-- /.Video -->
 
-            $navArrows.children( ':first' ).on( 'click', function() {
-                slitslider.previous();
-                return false;
-            });
-        };
+      <hr class="hidden-xs-down">
 
-        return { init : init };
+      <!-- Call to Action Section -->
+      <div class="row mb-4 ">
+        <div class="col-md-8">
+          <i>
+          <p>Como  institución  que  atiende  a  la  población  más  vulnerable  y  marginada  DIF  Guadalajara  tiene  un  compromiso  con  la  población  tapatía  de  atender  las  necesidades  más  urgentes  para  que puedan tener una vida digna con igualdad de oportunidades. Sin embargo para asegurar el éxito necesitamos del apoyo del mayor número de personas posible.</p>
+          </i>
+        </div>
+        <div class="col-md-4 pt-4">
+          <a class="btn btn-lg btn-info btn-block" href="#">Aporta</a>
+        </div>
+      </div>
 
-    })();
+    </div>
+    <!-- /.container -->
 
-    Page.init();
-});
-</script>
-<!-- /SL Slider -->
+    <!-- Bottom -->
+    <footer class="py-1 bg-bottom">
+      <div class="container py-md-5 py-sm-3">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <center><img src="img/logoDIF.png" width="200"></center>
+          </div>
+          <div class="col-md-4 col-sm-6" style="color:#868e96;font-size: 70%">
+            <center>
+              <i class="fa fa-home px-2"></i>
+              Calle Gral. Eulogio Parra 2539
+              <p style="padding-left: 1.9rem">Colonia Lomas de Guevara
+              <br>Guadalajara Jalisco, México</p>
 
-<style>
-.proyectos {
-  position: relative;
-  width: 100%;
-}
+              <p style="padding-left: 1.9rem">Horarios de Atención
+              <br>Lunes a Viernes de 9:00 a 16:00 hrs</p>
 
-.overlay3 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #41B8B8;
-}
+              <i class="fa fa-envelope px-2"></i>
+              <strong>Email: </strong> contacto@difgdl.gob.mx<br><br>
 
-.proyectos:hover .overlay3 {
-  color: #424242;
--webkit-transition: all .3s ease-in;
--moz-transition: all .3s ease-in;
--ms-transition: all .3s ease-in;
--o-transition: all .3s ease-in;
-transition: all .3s ease-in;
-opacity: .8;
-transform: scale(1.15);
--ms-transform: scale(1.15); /* IE 9 */
--webkit-transform: scale(1.15); /* Safari and Chrome */
-}
-</style>
+              <i class="fa fa-phone px-2"></i>
+              <strong>Tel:</strong> (33) 3848 5000
+            </center>
+          </div>
+          <div class="col-md-5 hidden-sm-down">
+            <div class="row">
+              <div class="col-lg-5 col-sm-6">
+                <img src="img/footer/footer_1.jpg" width="170px">
+              </div>
+              <div class="col-lg-5 col-sm-6">
+                <img src="img/footer/footer_2.jpg" width="170px">
+              </div>
+            </div>
+            <div class="row pt-xl-4">
+              <div class="col-lg-5 col-sm-6">
+                <img src="img/footer/footer_3.jpg" width="170px">
+              </div>
+              <div class="col-lg-5 col-sm-6">
+                <img src="img/footer/footer_4.jpg" width="170px">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.bottom -->
 
-<style>
-.noticias {
-  position: relative;
-  width: 100%;
-}
+    <!-- Footer -->
+    <footer class="py-1 bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pt-md-4">
+            <p style="color:#868e96;font-size: 70%">© 2017 <a href="#">DIF GDL</a>. Todos los derechos reservados.</p>
+          </div>
+          <div class="col-md-4 pt-md-4 hidden-sm-down">
+            <p style="color:#868e96;font-size: 70%"><b>DIF GUADALAJARA</b></p>
+          </div>
+          <div class="col-md-3 pt-md-3">
+            <a class="px-1" href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href=""><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href=""><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href=""><i class="fa fa-flickr fa-lg" aria-hidden="true"></i></a>
+          </div>
+          <div class="col-md-1 pt-md-3 hidden-sm-down">
+            <a href="#"><i class="fa fa-chevron-circle-up fa-lg" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /.footer -->
+    </footer>
 
-.overlay2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #fff;
-}
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-.noticias:hover .overlay2 {
-  color: #424242;
--webkit-transition: all .3s ease-in;
--moz-transition: all .3s ease-in;
--ms-transition: all .3s ease-in;
--o-transition: all .3s ease-in;
-transition: all .3s ease-in;
-opacity: .3;
-transform: scale(1.15);
--ms-transform: scale(1.15); /* IE 9 */
--webkit-transform: scale(1.15); /* Safari and Chrome */
-}
+  </body>
 
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-.video{
-      background: #fff;
-}
-</style>
-
-</body>
 </html>
