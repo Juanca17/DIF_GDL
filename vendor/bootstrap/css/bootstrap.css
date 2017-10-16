@@ -8200,7 +8200,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .hidden-xs-up {
-  display: none !important;
+  display: block !important;
 }
 
 @media (max-width: 575px) {
@@ -8211,7 +8211,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 576px) {
   .hidden-sm-up {
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -8223,7 +8223,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 768px) {
   .hidden-md-up {
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -8235,7 +8235,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 992px) {
   .hidden-lg-up {
-    display: none !important;
+    display: block !important;
   }
 }
 
@@ -8247,7 +8247,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 1200px) {
   .hidden-xl-up {
-    display: none !important;
+    display: block !important;
   }
 }
 

@@ -138,26 +138,44 @@
 
       <!-- Noticias -->
       <div class="my-2 row">
-        <div class="col-lg-2 pb-3"><center><img src="img/noticias/noticias.png" height="130px"></center></div>
-        <div class="col-lg-5">
-          <div class="card noticias">
+        <div class="col-lg-2 pb-2"><center><img class="mb-5" src="img/noticias/noticias.png" height="130px"></center></div>
+        <div class="col-lg-10 alig">
+          <center id="boletin">
             <a href="http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html">
-            <img class="card-img-top" src="img/noticias/boletines_imagen_15.jpg" height="170px">
-            <div class="overlay2">
-            </div>
+            <img class="mr-lg-4" src="img/noticias/boletines_imagen_15.jpg" width="300px" height="170px">
             </a>
-          </div>
-        </div>
-        <div class="col-lg-5">
-          <div class="card noticias">
+            <br class="hidden-md-up hidden-lg-down hidden-xl-down">
             <a href="http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html">
-            <img class="card-img-top" src="img/noticias/boletines_imagen_14.jpg" height="170px">
-            <div class="overlay2">
-            </div>
+            <img class="ml-lg-4" src="img/noticias/boletines_imagen_14.jpg" width="300px" height="170px">
             </a>
-          </div>
+          </center>
         </div>
       </div>
+      <script>
+      if (matchMedia) {
+        const mq = window.matchMedia("(min-width: 1100px)");
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+      }
+      function WidthChange(mq) {
+        if (mq.matches) {
+          window.onscroll = function() {myFunction()};
+          function myFunction() {
+              if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                  document.getElementById("boletin").innerHTML= "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='100%' height='100%'></a>";
+              } else {
+                  document.getElementById("boletin").innerHTML = "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html'><img class='ml-lg-4' src='img/noticias/boletines_imagen_14.jpg' width='300px' height='170px'></a>";
+              }
+          }
+        } else {
+          window.onscroll = function() {myFunction()};
+          function myFunction() {
+              document.getElementById("boletin").innerHTML = "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html'><img class='ml-lg-4' src='img/noticias/boletines_imagen_14.jpg' width='300px' height='170px'></a>";
+          }
+        }
+      }
+      </script>
+
       <!-- /.row -->
 
       <hr>
@@ -284,8 +302,6 @@
 
       <div class="container">
 
-        <h1 class="my-4 text-center text-lg-center">Fototeca</h1>
-
         <div class="row">
           <div class="col-lg-3 col-sm-6 col-xs-2 item2 pb-4">
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca1.jpg" width="400">
@@ -336,7 +352,7 @@
 
       <!-- mapa -->
       <div class="container">
-        <center><h2 class="pb-2">Ubícanos</h2></center>
+        <center><h2 class="pb-2"><b>Ubícanos</b></h2></center>
         <div class="row">
           <div class="col-12">
             <center>
@@ -363,9 +379,7 @@
       <!-- Aporta -->
       <div class="row mb-4 ">
         <div class="col-md-8">
-          <i>
           <p>Como  institución  que  atiende  a  la  población  más  vulnerable  y  marginada  DIF  Guadalajara  tiene  un  compromiso  con  la  población  tapatía  de  atender  las  necesidades  más  urgentes  para  que puedan tener una vida digna con igualdad de oportunidades. Sin embargo para asegurar el éxito necesitamos del apoyo del mayor número de personas posible.</p>
-          </i>
         </div>
         <div class="col-md-4 pt-4">
           <a class="btn btn-lg btn-info btn-block text-white" data-toggle="modal" data-target="#aporta" >Aporta</a>
@@ -388,7 +402,7 @@
     <footer id="footer" class="py-1 bg-bottom">
       <div class="container py-md-5 py-sm-3">
         <div class="row">
-          <div class="col-md-4 hidden-sm-down">
+          <div class="col-md-4 hidden-sm-down hidden">
             <center><img src="img/logoDIF.png" width="200"></center>
           </div>
           <div class="col-md-5 col-sm-6 py-2" style="color:#868e96;font-size: 75%">
@@ -445,7 +459,6 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/smooth.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
