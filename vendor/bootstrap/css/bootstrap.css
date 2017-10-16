@@ -4712,8 +4712,13 @@ button.close {
 }
 
 @media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 700px;
+    margin: 30px auto;
+  }
   .modal-lg {
     max-width: 800px;
+    margin: 30px auto;
   }
 }
 
@@ -8298,5 +8303,22 @@ a.text-dark:focus, a.text-dark:hover {
   transform: scale(1.15);
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari and Chrome */
+}
+
+.item2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.item2 img {
+  max-width: 100%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.item2:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*# sourceMappingURL=bootstrap.css.map */
