@@ -2072,14 +2072,14 @@ fieldset[disabled] a.btn {
 
 .btn-info {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: #1fcfcb;
+  border-color: #1fcfcb;
 }
 
 .btn-info:hover {
   color: #fff;
-  background-color: #138496;
-  border-color: #117a8b;
+  background-color: #868e96;
+  border-color: #868e96;
 }
 
 .btn-info:focus, .btn-info.focus {
@@ -5149,7 +5149,7 @@ button.close {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 10px;
+  top: 40px;
   left: 0;
   z-index: 15;
   display: -ms-flexbox;
@@ -5186,7 +5186,7 @@ button.close {
 
 .carousel-indicators li::after {
   position: absolute;
-  bottom: -10px;
+  top: -10px;
   left: 0;
   display: inline-block;
   width: 100%;
@@ -5201,7 +5201,7 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  top: 30px;
   left: 15%;
   z-index: 10;
   padding-top: 20px;
