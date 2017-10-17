@@ -5298,6 +5298,11 @@ a.bg-light:focus, a.bg-light:hover {
   box-shadow: 10px 10px 5px #888888;
 }
 
+.bg-map-shadow {
+  background-color: #4B6A79 !important;
+  box-shadow: 5px 5px 5px #888888;
+}
+
 .bg-bottom {
   background-color: #232323 !important;
 }
