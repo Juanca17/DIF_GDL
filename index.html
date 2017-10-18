@@ -34,7 +34,7 @@
               <a class="nav-link" href="#"><b>NOSOTROS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>TRANSPARENCIA</b></a>
+              <a class="nav-link" href="transparencia.html"><b>TRANSPARENCIA</b></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -141,6 +141,11 @@
         <div class="col-lg-2 pb-2"><center><img class="mb-5" src="img/noticias/noticias.png" height="130px"></center></div>
         <div class="col-lg-10 alig">
           <center id="boletin">
+            <?
+            $query="select * from boletines order by id desc";
+
+            while($row=mysql_fetch_array($query))
+            ?>
             <a href="http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html">
             <img class="mr-lg-4" src="img/noticias/boletines_imagen_15.jpg" width="300px" height="170px">
             </a>
@@ -197,13 +202,12 @@
 
       <div class="row">
         <div class="col-lg-3 col-sm-6 portfolio-item">
-          <div class="card bg-transparent">
+          <div class="card bg-transparent" style="border:0px">
             <div class="proyectos">
-              <a data-toggle="modal" data-target="#modal-infancia"><img class="card-img-top" src="img/evoluciona/infancia.png" alt="">
+              <a data-toggle="modal" href="#modal-infancia"><img class="card-img-top" src="img/evoluciona/infancia.png" alt="">
               <div class="overlayp">
               </div>
               </a>
-            </div>
             <div class="modal fade" id="modal-infancia" role="dialog">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -217,18 +221,18 @@
               <h4 class="card-title text-white">
                 <center>INFANCIA E INCLUSIÓN</center>
               </h4>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-sm-6 portfolio-item">
-          <div class="card bg-transparent">
+          <div class="card bg-transparent" style="border:0px">
             <div class="proyectos">
-              <a data-toggle="modal" data-target="#modal-mayores"><img class="card-img-top" src="img/evoluciona/adultosmayores.png" alt="">
+              <a data-toggle="modal" href="#modal-mayores"><img class="card-img-top" src="img/evoluciona/adultosmayores.png" alt="">
               <div class="overlayp">
               </div>
               </a>
-            </div>
             <div class="modal fade" id="modal-mayores" role="dialog">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -242,18 +246,18 @@
               <h4 class="card-title text-white">
                 <center>ADULTOS MAYORES</center>
               </h4>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-sm-6 portfolio-item">
-          <div class="card bg-transparent">
+          <div class="card bg-transparent" style="border:0px">
             <div class="proyectos">
-              <a data-toggle="modal" data-target="#modal-capacitacion"><img class="card-img-top" src="img/evoluciona/capacitacion.png" alt="">
+              <a data-toggle="modal" href="#modal-capacitacion"><img class="card-img-top" src="img/evoluciona/capacitacion.png" alt="">
               <div class="overlayp">
               </div>
               </a>
-            </div>
             <div class="modal fade" id="modal-capacitacion" role="dialog">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -268,17 +272,17 @@
                 <center>CAPACITACIÓN PARA EL TRABAJO</center>
               </h4>
             </div>
+            </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-sm-6 portfolio-item">
-          <div class="card bg-transparent">
+          <div class="card bg-transparent" style="border:0px">
             <div class="proyectos">
-              <a data-toggle="modal" data-target="#modal-prevencion"><img class="card-img-top" src="img/evoluciona/prevencion.png" alt="">
+              <a data-toggle="modal" href="#modal-prevencion"><img class="card-img-top" src="img/evoluciona/prevencion.png" alt="">
               <div class="overlayp">
               </div>
               </a>
-            </div>
             <div class="modal fade" id="modal-prevencion" role="dialog">
               <div class="modal-dialog">
                 <div class="modal-content">
@@ -292,6 +296,7 @@
               <h4 class="card-title text-white">
                 <center>PREVENCIÓN Y REINSERCIÓN SOCIAL</center>
               </h4>
+            </div>
             </div>
           </div>
         </div>
@@ -402,7 +407,7 @@
           <p>Como  institución  que  atiende  a  la  población  más  vulnerable  y  marginada  DIF  Guadalajara  tiene  un  compromiso  con  la  población  tapatía  de  atender  las  necesidades  más  urgentes  para  que puedan tener una vida digna con igualdad de oportunidades. Sin embargo para asegurar el éxito necesitamos del apoyo del mayor número de personas posible.</p>
         </div>
         <div class="col-md-4 pt-4">
-          <a class="btn btn-lg btn-info btn-block text-white" data-toggle="modal" data-target="#aporta" >Aporta</a>
+          <a class="btn btn-lg btn-info btn-block text-white" data-toggle="modal" href="#aporta" >Súmate</a>
         </div>
         <div class="modal fade" id="aporta" role="dialog">
           <div class="modal-dialog">

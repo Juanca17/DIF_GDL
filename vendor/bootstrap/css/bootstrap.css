@@ -3657,7 +3657,7 @@ tbody.collapse.show {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 0px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
 
@@ -8326,4 +8326,10 @@ a.text-dark:focus, a.text-dark:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.pdflink {
+  onMouseOver=this.style.cssText='color: #cc0000'
+  onMouseOut=this.style.cssText='color: #009933'
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
