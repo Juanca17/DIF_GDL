@@ -44,3 +44,5 @@ body {
     font-size: 80%;
   }
 }
+
+.fade-up{;position:relative;animation:animatebottom 1s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
