@@ -8205,7 +8205,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .hidden-xs-up {
-  display: block !important;
+  display: none !important;
 }
 
 @media (max-width: 575px) {
@@ -8216,7 +8216,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 576px) {
   .hidden-sm-up {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -8228,7 +8228,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 768px) {
   .hidden-md-up {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -8240,7 +8240,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 992px) {
   .hidden-lg-up {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -8252,7 +8252,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 @media (min-width: 1200px) {
   .hidden-xl-up {
-    display: block !important;
+    display: none !important;
   }
 }
 
@@ -8325,11 +8325,6 @@ a.text-dark:focus, a.text-dark:hover {
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.pdflink {
-  onMouseOver=this.style.cssText='color: #cc0000'
-  onMouseOut=this.style.cssText='color: #009933'
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
