@@ -37,11 +37,13 @@ body {
 @media (max-width: 768px) {
   .small-sm {
     font-size: 95%;
+    font-family: "Exo", sans-serif;
   }
 }
 @media (max-width: 768px) {
   .xsmall-sm {
     font-size: 80%;
+    font-family: "Exo", sans-serif;
   }
 }
 
