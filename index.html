@@ -30,11 +30,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#"><b>INICIO</b></a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><b>PROGRAMAS</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="transparencia.html"><b>TRANSPARENCIA</b></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <b>PROGRAMAS</b>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownServicios">
+                <a class="dropdown-item" href="#">Adultos Mayores</a>
+                <a class="dropdown-item" href="#">Calle</a>
+                <a class="dropdown-item" href="#">Inclusión</a>
+                <a class="dropdown-item" href="#">Niñez y Adolescencia</a>
+                <a class="dropdown-item" href="#">Protección y Apoyo Legal</a>
+                <a class="dropdown-item" href="#">Paz y Atención a las Violencias</a>
+              </div>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -44,16 +51,22 @@
                 <a class="dropdown-item" href="#">Centros de Desarrollo Comunitario (CDC)</a>
                 <a class="dropdown-item" href="#">Centros de Desarrollo Infantil (CDI)</a>
                 <a class="dropdown-item" href="#">Salud</a>
+                <a class="dropdown-item" href="#">Trabajo Social</a>
+                <a class="dropdown-item" href="#">Comedores</a>
+                <a class="dropdown-item" href="#">Unidad de Protección Civil</a>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>UBÍCANOS</b><i class="fa fa-map-marker ml-2" aria-hidden="true"></i></a>
+              <a class="nav-link" href="#"><b>UBÍCANOS</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>FOTOTECA</b><i class="fa fa-picture-o ml-2" aria-hidden="true"></i></a>
+              <a class="nav-link" href="#"><b>FOTOTECA</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>NOTICIAS</b><i class="fa fa-newspaper-o ml-2" aria-hidden="true"></i></a>
+              <a class="nav-link" href="transparencia.html"><b>TRANSPARENCIA</b></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><b>NOTICIAS</b></a>
             </li>
             <!--<li class="nav-item pl-2 hidden-lg-down">
               <a href="#" class="btn btn-secondary"><i class="fa fa-file-text" aria-hidden="true"></i> FICHA TÉCNICA</a>
@@ -135,15 +148,10 @@
 
       <!-- Noticias -->
       <div class="my-2 row">
-        <div class="col-lg-2 pb-2"><center><img class="my-lg-4 hidden-sm-up" src="img/noticias/noticias2.png" height="50px">
-                                  <img class="my-sm-4 hidden-xs-down" src="img/noticias/noticias2.png" height="90px"></center></div>
+        <div class="col-lg-2 pb-2"><center><img class="my-lg-4 hidden-sm-up" src="img/noticias/noticias.png" height="70px">
+                                  <img class="my-sm-4 hidden-xs-down" src="img/noticias/noticias.png" height="110px"></center></div>
         <div class="col-lg-10 alig">
           <center id="boletin">
-            <?
-            $query="select * from boletines order by id desc";
-
-            while($row=mysql_fetch_array($query))
-            ?>
             <a href="http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html">
             <img class="mr-lg-4" src="img/noticias/boletines_imagen_15.jpg" width="300px" height="170px">
             </a>
@@ -340,19 +348,19 @@
       <!-- Fototeca -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-sm-6 col-xs-2 item2 pb-4">
+          <div class="col-lg-3 hidden-md-down col-sm-6 col-xs-2 item2 pb-4">
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca1.jpg" width="400">
             <div class="item-overlay top"></div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-xs-6 item2 pb-4">
+          <div class="col-lg-3 hidden-md-down col-sm-6 col-xs-6 item2 pb-4">
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca2.jpg" width="400">
             <div class="item-overlay top"></div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-xs-2 item2 pb-4">
+          <div class="col-lg-3 hidden-md-down col-sm-6 col-xs-2 item2 pb-4">
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca3.jpg" width="400">
             <div class="item-overlay top"></div>
           </div>
-          <div class="col-lg-3 col-sm-6 col-xs-2 item2 pb-4">
+          <div class="col-lg-3 hidden-md-down col-sm-6 col-xs-2 item2 pb-4">
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca4.jpg" width="400">
             <div class="item-overlay top"></div>
           </div>
@@ -372,6 +380,22 @@
             <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca8.jpg" width="400">
             <div class="item-overlay top"></div>
           </div>
+          <div class="col-lg-3 hidden-md-up  col-sm-6 col-xs-2 item2 pb-4">
+            <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca11.jpg" width="400">
+            <div class="item-overlay top"></div>
+          </div>
+          <div class="col-lg-3 hidden-md-up  col-sm-6 col-xs-6 item2 pb-4">
+            <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca22.jpg" width="400">
+            <div class="item-overlay top"></div>
+          </div>
+          <div class="col-lg-3 hidden-md-up col-sm-6 col-xs-2 item2 pb-4">
+            <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca33.jpg" width="400">
+            <div class="item-overlay top"></div>
+          </div>
+          <div class="col-lg-3 hidden-md-up col-sm-6 col-xs-2 item2 pb-4">
+            <img class="img-fluid img-thumbnail" src="img/fototeca/fototeca55.jpg" width="400">
+            <div class="item-overlay top"></div>
+          </div>
         </div>
       </div>
       <!-- /.Fototeca -->
@@ -379,7 +403,7 @@
       <hr>
 
       <!-- redes sociales -->
-      <div class="row pt-sm-2 hidden-xs-down">
+      <div class="row pt-sm-2">
           <!--<div class="col-lg-6">
             <center>
               <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -391,7 +415,7 @@
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </center>
           </div>-->
-          <div class="col-lg-12">
+          <div class="col-lg-12 hidden-xs-down">
             <center>
             <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2Fvideos%2F1309339559174721%2F&show_text=1&width=560" width="560" height="504" style="border:none;overflow:hidden;box-shadow: 10px 10px 5px #888888;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
           </center>
@@ -452,7 +476,7 @@
               <br><a href="http://transparencia.difgdl.gob.mx/hipervinculos/AVISO_DE_CONFIDENCIALIDAD.pdf" target="_blank">Aviso de Privacidad</a>
               <br><a href="#footer">Compras Licitaciones</a>
               <br><a href="#footer">Directorio</a>
-              <br><a href="#footer">Organigrama</a>
+              <br><a href="http://difgdl.gob.mx/www/images/transparencia/FRACCION_V/Inciso_e/Organigrama_vigente.pdf">Organigrama</a>
               <br><a href="#footer">Padrón de Proveedores</a></p>
           </div>
         </div>
