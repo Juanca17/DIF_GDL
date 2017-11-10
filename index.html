@@ -90,7 +90,7 @@
           <div class="carousel-item active" style="background-color: #1fcfcb">
             <div class="row">
               <div class="col-lg-12">
-                <br><br><center><img class="hidden-sm-up" style="margin-top: 3rem;" src="img/slider/difgdl-xs.png" width="65%">
+                <br><br><center><img class="hidden-sm-up" style="margin-top: 3rem;margin-left: 1rem;" src="img/slider/difgdl-xs.png" width="65%">
                         <img class="hidden-md-up hidden-xs-down" style="margin-top: 3rem;" src="img/slider/difgdl-xs.png" width="40%">
                         <img class="hidden-sm-down" style="margin-top: 4rem;" src="img/slider/difgdl.png" width="80%"></center>
               </div>
@@ -152,14 +152,22 @@
       <div class="my-2 row">
         <div class="col-lg-2 pb-2"><center><img class="my-lg-4 hidden-sm-up" src="img/noticias/noticias.png" height="70px">
                                   <img class="my-sm-4 hidden-xs-down" src="img/noticias/noticias.png" height="110px"></center></div>
-        <div class="col-lg-10 alig">
+        <div class="col-lg-10">
           <center id="boletin">
-            <a href="http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html">
-            <img class="mr-lg-4" src="img/noticias/boletines_imagen_15.jpg" width="300px" height="170px">
-            </a>
+            <div class='news'>
+              <a href=''>
+                <img class="mr-lg-4 img-thumbnail2 image-news" src="img/noticias/boletines2_imagen_3.jpg" width="300px" height="170px"></a>
+                <div class='overlay-news'>
+                  <div class='text-news'>
+                    <small>Centro de Desarrollo Comunitario en Medrano, sede de la “Escuela de Diseño de Modas” de DIF GDL 30/10/2017</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <img class="mr-lg-4 img-thumbnail2" src="img/noticias/boletines2_imagen_3.jpg" width="300px" height="170px"></a>
             <br class="hidden-md-up hidden-lg-down hidden-xl-down">
-            <a href="http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html">
-            <img class="ml-lg-4" src="img/noticias/boletines_imagen_14.jpg" width="300px" height="170px">
+            <a href="">
+            <img class="ml-lg-4 img-thumbnail2" src="img/noticias/boletines2_imagen_4.jpg" width="300px" height="170px">
             </a>
           </center>
         </div>
@@ -175,19 +183,19 @@
           window.onscroll = function() {myFunction()};
           function myFunction() {
               if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                  document.getElementById("boletin").innerHTML= "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='100%' height='100%'></a>";
+                  document.getElementById("boletin").innerHTML= "<div class='news'><a href=''><img class='mr-lg-4 img-thumbnail image-news' src='img/noticias/boletines2_imagen_3.jpg' width='100%' height='100%'><div class='overlay-news'><div class='text-news'><small><h5>CDC en Medrano, sede de la “Escuela de Diseño de Modas” de DIF GDL</h5><p>30/10/2017</p></small></div></div></a></div>";
               } else {
-                  document.getElementById("boletin").innerHTML = "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html'><img class='ml-lg-4' src='img/noticias/boletines_imagen_14.jpg' width='300px' height='170px'></a>";
+                  document.getElementById("boletin").innerHTML = "<a href='#'><img class='mr-lg-4 img-thumbnail2' src='img/noticias/boletines2_imagen_3.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='#'><img class='ml-lg-4 img-thumbnail2' src='img/noticias/boletines2_imagen_4.jpg' width='300px' height='170px'></a>";
               }
           }
         } else {
           window.onscroll = function() {myFunction()};
           function myFunction() {
-              document.getElementById("boletin").innerHTML = "<a href='http://difgdl.gob.mx/boletines/15/dif-guadalajara-instalara-modulos-de-atencion-e-hidratacion-en-romeria-2017.html'><img class='mr-lg-4' src='img/noticias/boletines_imagen_15.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='http://difgdl.gob.mx/boletines/14/concluyen-labores-en-el-centro-de-acopio-dif-guadalajara-con-200-toneladas-de-apoyo.html'><img class='ml-lg-4' src='img/noticias/boletines_imagen_14.jpg' width='300px' height='170px'></a>";
+              document.getElementById("boletin").innerHTML = "<a href='#'><img class='mr-lg-4 img-thumbnail' src='img/noticias/boletines2_imagen_3.jpg' width='300px' height='170px'></a><br class='hidden-md-up hidden-lg-down hidden-xl-down'><a href='#'><img class='ml-lg-4 img-thumbnail' src='img/noticias/boletines2_imagen_4.jpg' width='300px' height='170px'></a>";
           }
         }
       }
-      </script>
+    </script>
 
       <!-- /.row -->
 
@@ -225,11 +233,14 @@
                 </div>
               </div>
            </div>
-            <div class="card-body bg-azul">
-              <h4 class="card-title text-white hidden-xs-down">
+            <div class="card-body bg-azul hidden-xs-down">
+              <h4 class="card-title text-white">
                 <center>INFANCIA E INCLUSIÓN</center>
               </h4>
-              </div>
+            </div>
+            <div class="card-body bg-azul hidden-sm-up">
+              <center><p class="text-white xsmall-sm">INFANCIA E INCLUSIÓN</p></center>
+            </div>
             </div>
           </div>
         </div>
@@ -250,11 +261,14 @@
                 </div>
               </div>
            </div>
-            <div class="card-body bg-azul">
-              <h4 class="card-title text-white hidden-xs-down">
+            <div class="card-body bg-azul hidden-xs-down">
+              <h4 class="card-title text-white">
                 <center>ADULTOS MAYORES</center>
               </h4>
-              </div>
+            </div>
+            <div class="card-body bg-azul hidden-sm-up">
+              <center><p class="text-white xsmall-sm">ADULTOS MAYORES</p></center>
+            </div>
             </div>
           </div>
         </div>
@@ -280,6 +294,9 @@
                 <center>CAPACITACIÓN PARA EL TRABAJO</center>
               </h4>
             </div>
+            <div class="card-body bg-azul hidden-sm-up">
+              <center><p class="text-white xsmall-sm">CAPACITACIÓN PARA EL TRABAJO</p></center>
+            </div>
             </div>
           </div>
         </div>
@@ -304,6 +321,9 @@
               <h4 class="card-title text-white">
                 <center>PREVENCIÓN Y REINSERCIÓN SOCIAL</center>
               </h4>
+            </div>
+            <div class="card-body bg-azul hidden-sm-up">
+              <center><p class="text-white xsmall-sm">PREVENCIÓN REINSERCIÓN SOCIAL</p></center>
             </div>
             </div>
           </div>
@@ -406,26 +426,28 @@
 
       <!-- redes sociales -->
       <div class="row pt-sm-2">
-          <!--<div class="col-lg-6">
+          <div class="col-12 col-md-6">
             <center>
-              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              <iframe class="hidden-sm-up" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+              <iframe class="hidden-xs-down" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
             </center>
+            <br>
           </div>
-          <div class="col-lg-6">
+          <div class="col-12 col-md-6 hidden-xs-down">
             <center>
-              <a class="twitter-timeline" data-width="340" data-height="500" href="https://twitter.com/DIFGUADALAJARA?ref_src=twsrc%5Etfw">Tweets by DIFGUADALAJARA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/DIFGUADALAJARA?ref_src=twsrc%5Etfw">Tweets by DIFGUADALAJARA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </center>
-          </div>-->
-          <div class="col-lg-12 hidden-xs-down">
+          </div>
+          <div class="col-md-12 hidden-xs-down">
             <center>
             <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2Fvideos%2F1309339559174721%2F&show_text=1&width=560" width="560" height="504" style="border:none;overflow:hidden;box-shadow: 10px 10px 5px #888888;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
           </center>
-          </div>
+        </div>
       </div>
       <!-- /.redes -->
 
-      <hr class="hidden-xs-down">
+      <hr>
 
       <!-- Aporta -->
       <div class="row mb-4 ">
