@@ -22,14 +22,14 @@
     <!-- Navigation -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light  bg-light fixed-top">
       <div id="nav" class="container">
-        <a href="#" ><img src="img/logoDIF.png" height="65px"></a>
+        <a data-toggle="modal" href="#identidadDIF"><img src="img/logoDIF.png" height="65px"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#"><b>INICIO</b></a>
+              <a class="nav-link" href=""><b>INICIO</b></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownServicios" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -37,11 +37,11 @@
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownServicios">
                 <a class="dropdown-item" href="#">Adultos Mayores</a>
-                <a class="dropdown-item" href="#">Calle</a>
                 <a class="dropdown-item" href="#">Inclusión</a>
                 <a class="dropdown-item" href="#">Niñez y Adolescencia</a>
-                <a class="dropdown-item" href="#">Protección y Apoyo Legal</a>
                 <a class="dropdown-item" href="#">Paz y Atención a las Violencias</a>
+                <a class="dropdown-item" href="#">Personas en Situcación de Indigencia (CADIPSI)</a>
+                <a class="dropdown-item" href="#">Protección y Apoyo Legal</a>
               </div>
             </li>
             <li class="nav-item dropdown">
@@ -49,97 +49,244 @@
                 <b>SERVICIOS</b>
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownServicios">
-                <a class="dropdown-item" href="#">Centros de Desarrollo Comunitario (CDC)</a>
-                <a class="dropdown-item" href="#">Centros de Desarrollo Infantil (CDI)</a>
-                <a class="dropdown-item" href="#">Salud</a>
-                <a class="dropdown-item" href="#">Trabajo Social</a>
-                <a class="dropdown-item" href="#">Comedores</a>
-                <a class="dropdown-item" href="#">Unidad de Protección Civil</a>
+                <a class="dropdown-item" href="cdc.php">Centros de Desarrollo Comunitario (CDC)</a>
+                <a class="dropdown-item" href="atencionninez.php">Atención a la niñez (CDIs y CAICs)</a>
+                <a class="dropdown-item" href="salud.php">Salud</a>
+                <a class="dropdown-item" href="trabajosocial.php">Trabajo Social</a>
+                <a class="dropdown-item" href="comedores.php">Comedores Comunitarios</a>
+                <a class="dropdown-item" href="proteccivil.php">Unidad de Protección Civil</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#"><b>UBÍCANOS</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><b>FOTOTECA</b></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="transparencia.html"><b>TRANSPARENCIA</b></a>
+              <a class="nav-link" href="transparencia.php"><b>TRANSPARENCIA</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#"><b>NOTICIAS</b></a>
             </li>
-            <!--<li class="nav-item pl-2 hidden-lg-down">
-              <a href="#" class="btn btn-secondary"><i class="fa fa-file-text" aria-hidden="true"></i> FICHA TÉCNICA</a>
-            </li>-->
           </ul>
         </div>
       </div>
     </nav>
+    <!-- Modal -->
+  <div class="modal fade" id="identidadDIF" role="dialog">
+    <div class="modal-dialog">
 
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One -->
-          <div class="carousel-item active" style="background-color: #1fcfcb">
-            <div class="row">
-              <div class="col-lg-12">
-                <br><br><center><img class="hidden-sm-up" style="margin-top: 3rem;margin-left: 1rem;" src="img/slider/difgdl-xs.png" width="65%">
-                        <img class="hidden-md-up hidden-xs-down" style="margin-top: 3rem;" src="img/slider/difgdl-xs.png" width="40%">
-                        <img class="hidden-sm-down" style="margin-top: 4rem;" src="img/slider/difgdl.png" width="80%"></center>
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body bg-dark text-white" style="font-family:Exo;">
+          <div align="right"><a href="javascript:;" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+          <div class="container" style="max-height:calc(100vh - 210px);overflow-y:auto;">
+            <center><h4 class="modal-title"><b>Identidad DIF</b></h4>
+            <p class="small-sm"><i>El DIF Guadalajara proporciona asistencia social, así como espacios de Desarrollo Comunitarios enfocados a grupos de población específicos que requieren del desarrollo de habilidades para lograr el empoderamiento y autosuficiencia de los miembros de la comunidad, poniéndolos en contacto con herramientas y tecnologías innovadoras.</i></p></center>
+            <div class="row mb-4 small">
+              <div class="col-12">
+                <div class="media">
+                  <div class="pull-left">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle fa-stack-2x" style="color:#1fcfcb;"></i>
+                      <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Misión</h5>
+                    <p align="justify">Contribuir a la restitución de grupos y personas en situación vulnerable por medio de la asistencia social, para así fortalecer el tejido comunitario de colonias populares en Guadalajara.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="media">
+                  <div class="pull-left">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle fa-stack-2x" style="color:#1fcfcb;"></i>
+                      <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Visión</h5>
+                    <p align="justify">Consolidar nuestro modelo de atención como uno con características de innovación en la puesta en marcha de estrategias de asistencia social, para prevenir y atender situaciones de vulnerabilidad social.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="media">
+                  <div class="pull-left">
+                    <span class="fa-stack">
+                      <i class="fa fa-circle fa-stack-2x" style="color:#1fcfcb;"></i>
+                      <i class="fa fa-bullseye fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </div>
+                  <div class="media-body">
+                    <h5 class="media-heading">Objetivo</h5>
+                    <p align="justify">Mejorar las condiciones de vida de grupos vulnerables y fortalecer nuestros programas para brindar ayuda a quienes la necesitan, así como proteger y promover los derechos humanos por medio del ofrecimiento herramientas para el desarrollo autosuficiente de las personas.</p>
+                  </div>
+                </div>
               </div>
             </div>
+            <center>
+              <h4 class="modal-title"><b>Valores</b></h4>
+              <div class="row">
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b1.png" width="90px"><br>
+                  Solidaridad
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b2.png" width="90px"><br>
+                  Dignidad
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b3.png" width="90px"><br>
+                  Humanismo
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b4.png" width="90px"><br>
+                  Paz
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b5.png" width="90px"><br>
+                  Equidad
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b6.png" width="90px"><br>
+                  Respeto
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b7.png" width="90px"><br>
+                  Justicia
+                </div>
+                <div class="col-6 col-sm-3 my-4">
+                  <img src="img/valores/b8.png" width="90px"><br>
+                  Honestidad
+                </div>
+              </div>
+            </center>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <header>
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox" style="font-family:Exo">
+          <!-- Slide One -->
+          <div class="carousel-item active" style="background-color: #1fcfcb;">
             <div class="carousel-caption">
               <h3>DIF Guadalajara</h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <br><br><br class="hidden-sm-up"><br class="hidden-sm-up">
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid" src="img/slider/slide1-1.png" width="200"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid"src="img/slider/slide1-2.png" width="200"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid"src="img/slider/slide1-3.png" width="200"></center>
+                </div>
+                <div class="col-12 hidden-sm-up">
+                  <center><img class="img-fluid" src="img/slider/slide1-4.png" width="200"></center>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Slide Two -->
           <div class="carousel-item" style="background-color: #e71096">
-            <div class="row">
-              <div class="col-lg-12">
-                <br><br><center><img class="hidden-sm-up" style="margin-top: 4rem;" src="img/slider/centros.png" width="220px">
-                <img class="hidden-xs-down" style="margin-top: 1.5rem;" src="img/slider/centros.png" width="370px"></center>
-              </div>
-            </div>
             <div class="carousel-caption">
               <h3>Centros de Atención</h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <br class="hidden-xs-down"><br class="hidden-xs-down"><br><br>
+                   <br class="hidden-lg-up "><br class="hidden-lg-up"><br class="hidden-lg-up">
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca1.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca2.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca3.jpg" width="300"></center>
+                </div>
+                <div class="col-12 hidden-sm-up">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca4.jpg" width="300"></center>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Slide Three -->
           <div class="carousel-item" style="background-color: #6bc048">
-            <div class="row">
-              <div class="col-lg-12">
-                <br><br><center><img class="hidden-sm-up" style="margin-top: 4rem;" src="img/slider/difevoluciona.png" width="280px">
-                  <img class="hidden-xs-down" style="margin-top: 3rem;" src="img/slider/difevoluciona.png" width="500px"></center>
-              </div>
-            </div>
             <div class="carousel-caption">
-              <h3>DIF Evoluciona</h3>
+              <h3>Un DIF que evoluciona...</h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <br class="hidden-xs-down"><br class="hidden-xs-down"><br><br>
+                   <br class="hidden-lg-up "><br class="hidden-lg-up"><br class="hidden-lg-up">
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca1.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca2.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca3.jpg" width="300"></center>
+                </div>
+                <div class="col-12 hidden-sm-up">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca4.jpg" width="300"></center>
+                </div>
+              </div>
             </div>
           </div>
           <!-- Slide Four -->
           <div class="carousel-item" style="background-color: #fc8104">
-            <div class="row">
-              <div class="col-lg-12">
-                <br><br><center><img class="hidden-sm-up"  style="margin-top: 5rem;" src="img/slider/grupos.png" width="280px">
-                <img class="hidden-xs-down" style="margin-top: 3rem;" src="img/slider/grupos.png" width="500px"></center>
-              </div>
-            </div>
             <div class="carousel-caption">
-              <h3>Grupos de Atención</h3>
+              <h3>Grupos de atención</h3>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <br class="hidden-xs-down"><br class="hidden-xs-down"><br><br>
+                   <br class="hidden-lg-up "><br class="hidden-lg-up"><br class="hidden-lg-up">
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca1.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca2.jpg" width="300"></center>
+                </div>
+                <div class="col-sm-4 hidden-xs-down">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca3.jpg" width="300"></center>
+                </div>
+                <div class="col-12 hidden-sm-up">
+                  <center><img class="img-fluid img-thumbnail" src="img/fototeca/fototeca4.jpg" width="300"></center>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
           <span class="sr-only">Next</span>
         </a>
       </div>
@@ -422,29 +569,37 @@
       </div>
       <!-- /.Fototeca -->
 
-      <hr>
+      <hr class="hidden-lg-down">
 
       <!-- redes sociales -->
-      <div class="row pt-sm-2">
-          <div class="col-12 col-md-6">
-            <center>
-              <iframe class="hidden-sm-up" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=300&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-              <iframe class="hidden-xs-down" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=400&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="400" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-            </center>
-            <br>
+      <div class="row">
+        <div class="col-6 hidden-lg-down">
+          <div class="well">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
-          <div class="col-12 col-md-6 hidden-xs-down">
-            <center>
-              <a class="twitter-timeline" data-width="400" data-height="500" href="https://twitter.com/DIFGUADALAJARA?ref_src=twsrc%5Etfw">Tweets by DIFGUADALAJARA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </center>
+        </div>
+        <div class="col-6 hidden-lg-down">
+          <div class="well">
+            <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/DIFGUADALAJARA?ref_src=twsrc%5Etfw"></a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            </script>
           </div>
-          <div class="col-md-12 hidden-xs-down">
-            <center>
-            <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2Fvideos%2F1309339559174721%2F&show_text=1&width=560" width="560" height="504" style="border:none;overflow:hidden;box-shadow: 10px 10px 5px #888888;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-          </center>
         </div>
       </div>
+
+      <hr>
+
+      <!-- video -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <center>
+            <iframe class="videoDIF" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fdif.guadalajara%2Fvideos%2F1309339559174721%2F&show_text=1&width=600" width="600" height="500" style="border:none;overflow:hidden;box-shadow: 10px 10px 5px #888888;" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+            </center>
+          </div>
+        </div>
+      </div>
+
       <!-- /.redes -->
 
       <hr>
@@ -465,7 +620,7 @@
               </div>
             </div>
           </div>
-       </div>
+        </div>
       </div>
 
     </div>
@@ -497,11 +652,11 @@
               <b>Enlaces</b>
               <p style="padding-left: 2.3rem">
                   <a href="https://calendar.google.com/calendar/embed?src=5tijb5url4qj5mmoa8c37ltt08%40group.calendar.google.com&ctz=America/Mexico_City" target="_blank">Agenda</a>
-              <br><a href="http://transparencia.difgdl.gob.mx/hipervinculos/AVISO_DE_CONFIDENCIALIDAD.pdf" target="_blank">Aviso de Privacidad</a>
-              <br><a href="#footer">Compras Licitaciones</a>
-              <br><a href="transparencia/I/I-j/Directorio.pdf" target="_blank">Directorio</a>
-              <br><a href="http://difgdl.gob.mx/www/images/transparencia/FRACCION_V/Inciso_e/Organigrama_vigente.pdf" target="_blank">Organigrama</a>
-              <br><a href="#footer">Padrón de Proveedores</a></p>
+              <br><a href="transparencia/Aviso_de_Confidencialidad.pdf" target="_blank">Aviso de Privacidad</a>
+              <br><a href="transparencia/Art8/fraccion1/1-j/Directorio.pdf" target="_blank">Directorio</a>
+              <br><a href="#identidadDIF" data-toggle="modal">Identidad DIF</a>
+              <br><a href="transparencia/Art8/fraccion5/5-e/01_Organigrama_vigente.pdf" target="_blank">Organigrama</a>
+              <br><a href="#footer">Preguntas Frecuentes</a>
           </div>
         </div>
       </div>
@@ -521,7 +676,7 @@
           <div class="col-md-3 pt-md-3">
             <a class="px-1" href="https://www.facebook.com/dif.guadalajara/" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a>
             <a class="px-1" href="https://twitter.com/DIFGUADALAJARA" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-            <a class="px-1" href="https://www.flickr.com/" target="_blank"><i class="fa fa-flickr fa-lg" aria-hidden="true"></i></a>
+            <a class="px-1" href="https://www.flickr.com/people/139053533@N02/" target="_blank"><i class="fa fa-flickr fa-lg" aria-hidden="true"></i></a>
           </div>
           <div class="col-md-1 pt-md-3 hidden-sm-down">
             <a href="#"><i class="fa fa-chevron-circle-up fa-lg" aria-hidden="true"></i></a>
